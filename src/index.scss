@@ -1,0 +1,21 @@
+// styles go here
+
+body * {
+  display: flex;
+  box-sizing: border-box;
+  font-size: 12px;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  padding: 1.3rem;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 3rem;
+}

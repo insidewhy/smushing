@@ -1,0 +1,34 @@
+{
+  "name": "smushing",
+  "description": "picture smusher",
+  "license": "MIT",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.7.0",
+    "@typescript-eslint/parser": "^4.7.0",
+    "css-loader": "^5.0.1",
+    "eslint": "^7.13.0",
+    "eslint-config-prettier": "^6.15.0",
+    "fork-ts-checker-webpack-plugin": "^6.0.1",
+    "html-webpack-plugin": "^4.5.0",
+    "husky": "^4.3.0",
+    "prettier": "^2.1.2",
+    "pretty-quick": "^3.1.0",
+    "sass": "^1.29.0",
+    "sass-loader": "^10.1.0",
+    "style-loader": "^2.0.0",
+    "ts-loader": "^8.0.11",
+    "typescript": "^4.0.5",
+    "webpack": "^5.4.0",
+    "webpack-cli": "^4.2.0",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "scripts": {
+    "start": "webpack serve",
+    "build": "webpack",
+    "lint": "eslint src/*.ts",
+    "upload": "yarn build && rsync -aP dist/ c:projects/chilon.net/smushing"
+  },
+  "dependencies": {
+    "destyle.css": "^2.0.2"
+  }
+}
